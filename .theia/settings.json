@@ -19,5 +19,12 @@
       "**/core.mongo*": true,
       "**/core.python*": true
    },
-   "emmet.extensionsPath": ".theia"
+"emmet.extensionsPath": ".theia",
+"python.pythonPath": "/bin/python3",
+"typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": true,
+"typescript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": true,
+"typescript.format.insertSpaceAfterTypeAssertion": true,
+"typescript.format.insertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces": true,
+"typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis": true,
+"xml.format.joinContentLines": true
 }
