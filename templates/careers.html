@@ -1,4 +1,68 @@
 {% extends "base.html" %}
 {% block content %}
    <h2>{{ page_title }}</h2>
+
+     {% for item in reagents %}
+  <div class="row featurette">
+<div class="col-md-7">
+    <dl>
+        <h3>{{ item.name }}</h3>
+        <dd>{{ item.class }}</dd>
+         <dd>{{ item.subclass  }}</dd>
+    </dl>
+
+</div>
+
+
+    {% endblock %}
+
+        <!-----{% if item_subclass = Cooking! %}
+            <div class="col-md-5">
+        <img src="{{ member.image_source }}" alt="" class="featurette-image image-responsive">
+    </div>
+
+        --
+
+            <hr class="featurette-divider">
+
+        {% endif %}
+
+    {% endfor %}
+
 {% endblock %}
+
+ "id": 3173,
+        "name": "Bear Meat",
+        "purchase_price": 60,
+        "sell_price": 15,
+        "is_equippable": null,
+        "is_stackable": true,
+        "level": 5,
+        "required_level": null,
+        "max_count": null,
+        "item_class": "Tradeskill",
+        "item_subclass": "Cooking"
+    },
+<!------ >
+<div class="col-md-4">
+
+</div>
+
+<div class="col-md-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe nostrum ullam eveniet pariatur voluptates odit, 
+    fuga atque ea nobis sit soluta odio, adipisci quas excepturi maxime quae totam ducimus consectetur</div>
+    <div class="col-md-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe nostrum ullam eveniet pariatur voluptates odit, 
+    fuga atque ea nobis sit soluta odio, adipisci quas excepturi maxime quae totam ducimus consectetur</div>
+  </div>
+  <div class="row featurette">
+<div class="col-md-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe nostrum ullam eveniet pariatur voluptates odit, 
+    fuga atque ea nobis sit soluta odio, adipisci quas excepturi maxime quae totam ducimus consectetur</div>
+<div class="col-md-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe nostrum ullam eveniet pariatur voluptates odit, 
+    fuga atque ea nobis sit soluta odio, adipisci quas excepturi maxime quae totam ducimus consectetur</div>
+    <div class="col-md-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe nostrum ullam eveniet pariatur voluptates odit, 
+    fuga atque ea nobis sit soluta odio, adipisci quas excepturi maxime quae totam ducimus consectetur</div>
+  </div>
+
+
+
+{% endblock %}
+-->

@@ -1,53 +1,23 @@
 {% extends "base.html" %}
 {% block content %}
 
-{% for number in list_of_numbers %}
-        <p>{{ number }}</p>
-    {% endfor %}
-
-
     <h2>{{ page_title }}</h2>
-     <p>
-        The formation of the group grew out of a meeting Gandalf had with Thorin in Bree which kindled Thorin's interest in
-		recapturing his long lost family inheritance. (Thorin's grandfather had been the king of the Lonely Mountain when
-		Smaug came and took it.) Remembering that he had once known an adventurous Hobbit on his travels in the Shire,
-		point-and-click adventure*****unlucky number, and as Gandalf had planned to
-		leave on other business, welcomed a fourteenth to fill into their party.
+    <p>
+       Everything, what you need for your PC-GAMEs. Search, Copy, Add or Save Your favorite Game (Cheats)!"
     </p>
 
-    <div class="row featurette">
-        <div class="col-md-7">
-            <h3>Thorin Oakenshield</h3>
-            <p>
-                ith one of the Dwarven armies beneath the East-gate of Moria. At some
-                point in the fighting, his shield broke, and using an oaken tree branch found on the floor as a shield, he gained
-                the epithet "Oakenshield," which would remain with him even in death.
-            </p>
-        </div>
-        <div class="col-md-5">
-            <img src="https://vignette.wikia.nocookie.net/lotr/images/3/3f/ThorinBIG.jpg" alt="">
-        </div>
-    </div>
-    <hr />
+    {% for item_id in reagents %}
 
-    <div class="row featurette">
-        <div class="col-md-5">
-            <img src="https://upload.wikimedia.org/wikipedia/en/1/12/The_Neverhood_-_box_art.jpg" alt="">
-        </div>
-        <div class="col-md-7">
-            <h3>The Neverhood</h3>
-            <p>
-                The Neverhood (also called The Neverhood Chronicles, released in Japan as Klaymen Klaymen: The Mystery of Neverhood)
-                is a 1996 point-and-click adventure video game developed by The Neverhood, Inc. and published by DreamWorks
-                Interactive for Microsoft Windows. The game follows the adventure of a claymation character named Klaymen as he
-                discovers his origins and his purpose in a world made entirely out of clay. When the game was originally released,
-                it was unique in that all of its animation was done entirely in claymation, including all of the sets, rather than
-                2- or 3-dimensional computer graphics, like many other games at its time. The gameplay consists mostly of the player
-                guiding the main character Klaymen around and solving puzzles to advance in the game. As the player advances through
-                different areas of the game, there are various video sequences that help advance the plot. In addition to being
-                unique, The Neverhood aimed at being quirky and humorous, as is evident by the characters, the music, and the plot
-                sequence of the game.
-            </p>
-        </div>
-    </div>
+        <div class="row featurette">
+                <div class="col-md-7">
+                    <h3>{{ item_id }}</h3>
+                    <p> {{ item.class }} </p>
+                    <p>{{ item.subclass }}</p>
+                </div>
+             
+
+        {% endif %}
+
+    {% endfor %}
+
 {% endblock %}
