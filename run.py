@@ -1,9 +1,12 @@
 import os
 import json
-from flask import Flask, render_template
+from flask import Flask ,render_template , request , flash
+if os.path.exist("env.py"):
+    import env
 
 
 app = Flask(__name__)
+app.secret_key = os.environ.get("SECRET_KEY")
 
 
 @app.route("/")
@@ -11,24 +14,21 @@ def index():
     return render_template("index.html")
 
 
-@app.route("/stuff")
-def about():
-    items = []
-    with open("data/reagents.json", "r") as json_data:
-        items = json.load(json_data)
-    return render_template("stuff.html", page_title="Stuff", reagents=items)
+@app.route("/page2")
+def page2():
+    return render_template("page2.html", page_title="page2")
 
 
-@app.route("/misc")
-def item_name():
-    item_name = {}
-    with open("data/reagents.json", "r") as json_data:
-        item_name = json.load(json_data)
-    return render_template("misc.html", page_title="Misc", items=item_name)
+@app.route("/page3")
+def page3():
+    return render_template("page3.html", page_title="page3")
 
 
-@app.route("/contact")
+@app.route("/contact", methods=["GET", "POST"])
 def contact():
+    if request.method == "POST":
+        flash("Thanks {}, we have received your message!".format(
+            request.form.get("name")))
     return render_template("contact.html", page_title="Contact")
 
 
