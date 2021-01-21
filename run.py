@@ -11,12 +11,20 @@ def index():
     return render_template("index.html")
 
 
-@app.route("/about")
+@app.route("/stuff")
 def about():
-    data = []
+    items = []
     with open("data/reagents.json", "r") as json_data:
-        data = json.load(json_data)
-    return render_template("about.html", page_title="About", reagents=data)
+        items = json.load(json_data)
+    return render_template("stuff.html", page_title="Stuff", reagents=items)
+
+
+@app.route("/misc")
+def item_name():
+    item_name = {}
+    with open("data/reagents.json", "r") as json_data:
+        item_name = json.load(json_data)
+    return render_template("misc.html", page_title="Misc", items=item_name)
 
 
 @app.route("/contact")
