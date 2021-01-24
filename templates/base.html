@@ -8,16 +8,14 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css') }}" type="text/css">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/clean-blog.min.css') }}" type="text/css">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
-
-
-    <title>wow helper</title>
+    <title>medieval castles</title>
 </head>
 
 <body>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
         <div class="container">
-            <a class="navbar-brand" href="{{ url_for('index') }}">home </a>
+            <a class="navbar-brand" href="{{ url_for('index') }}"> </a>
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
                 data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -44,15 +42,16 @@
     </nav>
 
     <!-- Page Header -->
-    <header class="masthead" style="background-image: url('https://corwyn.wdfiles.com/local--files/castle-ravenwood/HAUNTED%20CASTLE-9.jpg')">
+    <header class="masthead" style="background-image: url('https://anga.ua/files/anga/reg_images/spisskyhrad1.jpg')">
+        <!-------------------------------https://windows10spotlight.com/wp-content/uploads/2019/08/5f7ca5f1fa6763ddd63173cb6ba8f029.jpg-->
 
         <div class="overlay"></div>
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-md-10 mx-auto">
                     <div class="site-heading">
-                        <h2> </h2>
-                        <span class="subheading"> </span>
+                        <h2>medieval castles and they legends </h2>
+                        <span class="subheading">why not let your imagination run wild in one of these historic places?</span>
                     </div>
                 </div>
             </div>
@@ -61,6 +60,12 @@
 
     <!-- Main Content -->
     <div class="container">
+         <p>
+        <figure class="wp-block-image size-full">
+            <img loading="lazy" src="https://www.slovakia.com/wp-content/uploads/2020/11/where-is-bratislava.png" alt="" class="wp-image-281" width="515" height="205"></figure>
+    </p>
+     
+   
       
         {% block content %}
         {% endblock %}
@@ -69,6 +74,13 @@
 
     <hr>
 
+
+
+
+
+
+
+
     <!-- Footer -->
     <footer>
         <div class="container">
@@ -76,28 +88,31 @@
                 <div class="col-lg-8 col-md-10 mx-auto">
                     <ul class="list-inline text-center">
                         <li class="list-inline-item">
-                            <a href="#">
-                                <span class="fa-stack fa-lg">
+                            
+                                <span class="fa-stack fa-lg">Castles, chateaux and manors in Slovakia form an important part of immovable cultural
+monuments. 
                                     <i class="fas fa-circle fa-stack-2x"></i>
                                     <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
                                 </span>
-                            </a>
+                            
                         </li>
                         <li class="list-inline-item">
-                            <a href="#">
-                                <span class="fa-stack fa-lg">
+                        
+                                <span class="fa-stack fa-lg">Today, many of these buildings serve the development of culture such as museums, galleries and are
+made available for tourism. 
                                     <i class="fas fa-circle fa-stack-2x"></i>
                                     <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
                                 </span>
-                            </a>
+                            
                         </li>
                         <li class="list-inline-item">
-                            <a href="#">
-                                <span class="fa-stack fa-lg">
+                          
+                                <span class="fa-stack fa-lg">In addition to cultural, educational and aesthetic functions
+they also represent significant material values. Therefore, it is necessary to protect ,record and document those historical objects.
                                     <i class="fas fa-circle fa-stack-2x"></i>
                                     <i class="fab fa-github fa-stack-1x fa-inverse"></i>
                                 </span>
-                            </a>
+                            
                         </li>
                     </ul>
                     <p class="copyright text-muted">Copyright &copy; Your Website <span id="copyright"></span></p>
@@ -114,6 +129,10 @@
     <script src="{{ url_for('static', filename='js/clean-blog.min.js') }}"></script>
     <script>
         $("#copyright").text(new Date().getFullYear());
+        
+        $(document).ready(function() {
+$(".p row featurette").click(function() {
+		$("img src").hide(2000).show(2000)})})
     </script>
     
 </body>
