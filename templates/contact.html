@@ -1,11 +1,16 @@
 {% extends "base.html" %}
 {% block content %}
-    <h2>{{ page_title }}</h2>
-
-	<div class="row">
-		<div class="col-lg-8 col-md-10 mx-auto">
-
-            {% with messages = get_flashed_messages() %}
+  
+ <!-- Signup-->
+        <section class="signup-section" id="signup">
+            <div class="container">
+                  <h2>{{ page_title }}</h2>
+                <div class="row">
+                    <div class="col-md-10 col-lg-8 mx-auto text-center">
+                        <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
+                        <h2 class="text-white mb-5">Want to get in touch? Fill out the form below to send me a message and I will get back to you as soon as
+                possible!</h2>
+                {% with messages = get_flashed_messages() %}
                 {% if messages %}
                     <ul class="flashes">
                         {% for message in messages %}
@@ -15,8 +20,7 @@
                 {% endif %}
             {% endwith %}
 
-			<p>Want to get in touch? Fill out the form below to send me a message and I will get back to you as soon as
-                possible!</p>
+		     <form class="form-inline d-flex">
 			<form method="POST" name="sentMessage" id="contactForm" novalidate>
 				<div class="control-group">
 					<div class="form-group floating-label-form-group controls">
@@ -50,10 +54,13 @@
 				<div id="success"></div>
 				<div class="form-group">
 					<button type="submit" class="btn btn-primary" id="sendMessageButton">Send</button>
-				</div>
+                </div>
 			</form>
-		</div>
-    </div>
-    <hr class="featurette-divider">
+			</form>    
+                    </div>
+                </div>
+            </div>
+        </section>
+            
 
 {% endblock %}

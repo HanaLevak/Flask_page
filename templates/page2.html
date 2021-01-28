@@ -1,77 +1,75 @@
 {% extends "base.html" %}
 {% block content %}
+ <h2>{{ page_title }}</h2>  
+<section>
+        <section class="projects-section bg-light" id="projects" src="{{ url_for('img/demo-image-01.jpg') }}" alt="" />
+<div class="container">
 
-
-
-<!---toto uprabit-->
- <h3 class="post-title">
-                            Definitions of a castle's types:</h3>
-                          
-                            <p class="post-meta">castle - a large feudal fortified seat situated on rocky ridges, on
-mountain ridges or in places where wetlands or watercourses formed
-their natural protection, built in the 12th - 15th century</p>
-            <img src="http://blog.timeforslovakia.com/wp-content/uploads/2015/08/Orava-Castle-Slovakia-600x960-720x340.jpg" alt="" class="featurette-image image-responsive">
-        </div>
-https://g.cz/sites/default/files/field/image/2018/lada_vodnik.jpg
- <hr class="featurette-divider">
- <div class="post-preview">
-                            <p class="post-meta">monastery a common house of monks or nuns</p>
-            <img src="https://ipravda.sk/res/2011/08/16/thumbs/hronsky-benadik-klastor-clanokW.jpg" alt="" class="featurette-image image-responsive">
-        </div>
-
-           <hr class="featurette-divider">
-         <div class="post-preview">
-                            <p class="post-meta">fortress -  a fortified object secured against attack and established for defense</p>
-            <img src="http://image.slovenskehrady.sk/Devin/Devin_129.jpg" alt="" class="featurette-image image-responsive">
-        </div>
-
-        <hr class="featurette-divider">
- <div class="post-preview">
-                          <h3 class="post-subtitle">castle ruins</h3>
-                            <p class="post-meta"> castle ruins - remains of walls of a buildings</p>
-            <img src="https://images.uns.sk/a/14408481092138.jpg" alt="" class="featurette-image image-responsive">
-        </div>
-
-        <hr class="featurette-divider">
- <div class="post-preview">
-                          <h3 class="post-subtitle">manor house  </h3>
-                            <p class="post-meta"> - a larger artistically valuable aristocratic building with a residential function built in 18.
-and the 19th century</p>
-          
-<!----- >
-    {% for member in company %}
-
-        <div class="row featurette">
-
-            {% if loop.index % 2 != 0 %}
-
-                <div class="col-md-7">
-                    <h3><a href="/about/{{ member.url }}">{{ loop.index }}. {{ member.name }}</a></h3>
-                    <p>{{ member.description }}</p>
+                <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/bg-masthead.jpg" alt=""></div>
+                    <div class="col-xl-4 col-lg-5">
+                        <div class="featured-text text-center text-lg-left">
+                            <h4>Shoreline</h4>
+                            <p class="text-black-50 mb-0">To speak of Slovak culture and art is to note a tapestry of traditions, customs, folklore, and on the same breath mention its staging under different regimes, and the European context overarching it. Long steeped in an agrarian life while being subjects under the Austro-Hungarian Empire, and then after WWII, as comrades within a Soviet satellite state, Slovaks sought to preserve not only their language but also all those distinctive markings of their culture.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-5">
-                    <img src="{{ member.image_source }}" alt="" class="featurette-image image-responsive">
+				
+                 <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/bg-masthead.jpg" alt=""></div>
+                    <div class="col-xl-4 col-lg-5">
+                        <div class="featured-text text-center text-lg-left">
+                            <h4>Shoreline</h4>
+                            <p class="text-black-50 mb-0">To speak of Slovak culture and art is to note a tapestry of traditions, customs, folklore, and on the same breath mention its staging under different regimes, and the European context overarching it. Long steeped in an agrarian life while being subjects under the Austro-Hungarian Empire, and then after WWII, as comrades within a Soviet satellite state, Slovaks sought to preserve not only their language but also all those distinctive markings of their culture.</p>
+                        </div>
+                    </div>
                 </div>
-            
-            {% else %}
-
-                <div class="col-md-5">
-                    <img src="{{ member.image_source }}" alt="" class="featurette-image image-responsive">
+           <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/bg-masthead.jpg" alt=""></div>
+                    <div class="col-xl-4 col-lg-5">
+                        <div class="featured-text text-center text-lg-left">
+                            <h4>Shoreline</h4>
+                            <p class="text-black-50 mb-0">To speak of Slovak culture and art is to note a tapestry of traditions, customs, folklore, and on the same breath mention its staging under different regimes, and the European context overarching it. Long steeped in an agrarian life while being subjects under the Austro-Hungarian Empire, and then after WWII, as comrades within a Soviet satellite state, Slovaks sought to preserve not only their language but also all those distinctive markings of their culture.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-7">
-                    <h3><a href="/about/{{ member.url }}">{{ loop.index }}. {{ member.name }}</a></h3>
-                    <p>{{ member.description }}</p>
+                 <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/bg-masthead.jpg" alt=""></div>
+                    <div class="col-xl-4 col-lg-5">
+                        <div class="featured-text text-center text-lg-left">
+                            <h4>Shoreline</h4>
+                            <p class="text-black-50 mb-0">To speak of Slovak culture and art is to note a tapestry of traditions, customs, folklore, and on the same breath mention its staging under different regimes, and the European context overarching it. Long steeped in an agrarian life while being subjects under the Austro-Hungarian Empire, and then after WWII, as comrades within a Soviet satellite state, Slovaks sought to preserve not only their language but also all those distinctive markings of their culture.</p>
+                        </div>
+                    </div>
                 </div>
+                <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/bg-masthead.jpg" alt=""></div>
+                    <div class="col-xl-4 col-lg-5">
+                        <div class="featured-text text-center text-lg-left">
+                            <h4>Shoreline</h4>
+                            <p class="text-black-50 mb-0">To speak of Slovak culture and art is to note a tapestry of traditions, customs, folklore, and on the same breath mention its staging under different regimes, and the European context overarching it. Long steeped in an agrarian life while being subjects under the Austro-Hungarian Empire, and then after WWII, as comrades within a Soviet satellite state, Slovaks sought to preserve not only their language but also all those distinctive markings of their culture.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/bg-masthead.jpg" alt=""></div>
+                    <div class="col-xl-4 col-lg-5">
+                        <div class="featured-text text-center text-lg-left">
+                            <h4>Shoreline</h4>
+                            <p class="text-black-50 mb-0">To speak of Slovak culture and art is to note a tapestry of traditions, customs, folklore, and on the same breath mention its staging under different regimes, and the European context overarching it. Long steeped in an agrarian life while being subjects under the Austro-Hungarian Empire, and then after WWII, as comrades within a Soviet satellite state, Slovaks sought to preserve not only their language but also all those distinctive markings of their culture.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/bg-masthead.jpg" alt=""></div>
+                    <div class="col-xl-4 col-lg-5">
+                        <div class="featured-text text-center text-lg-left">
+                            <h4>Shoreline</h4>
+                            <p class="text-black-50 mb-0">To speak of Slovak culture and art is to note a tapestry of traditions, customs, folklore, and on the same breath mention its staging under different regimes, and the European context overarching it. Long steeped in an agrarian life while being subjects under the Austro-Hungarian Empire, and then after WWII, as comrades within a Soviet satellite state, Slovaks sought to preserve not only their language but also all those distinctive markings of their culture.</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+</section>
 
-            {% endif %}
-
-        </div>
-
-        {% if loop.index != loop.length %}
-
-            <hr class="featurette-divider">
-
-        {% endif %}
-
-    {% endfor %}
 {% endblock %}
