@@ -1,17 +1,19 @@
-{% extends "base.html" %}
-<!DOCTYPE html>
+<!---------
+    !DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <title>legends</title>
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='static/img/favicon.ico') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='vendor/fontawesome-free/webfonts') }}"/>
       <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='vendor/fontawesome-free/css/fontawesome.min.css') }}"/>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}"/>
     </head>
     
 <body id="page-top">
-    <!-- Navigation-->
+    <!-- Navigation--
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
         <div class="container">
             <a class="navbar-brand" href="{{ url_for('index') }}"> home page </a>
@@ -30,44 +32,71 @@
                         <a class="nav-link js-scroll-trigger" href="{{ url_for('legends') }}">Legends</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="{{ url_for('contact') }}">Contact me</a>
+                        <a class="nav-link js-scroll-trigger" href="{{ url_for('contact') }}">Contact</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <!-- Masthead-->
+
+    { extends "base.html" }
+
+{ block title } MySample { endblock }
+
+{ block content }
+  Cool content here
+{ endblock }
+    <!-- Masthead--
     <header class="masthead">
         <div class="container d-flex h-100 align-items-center">
-      <img class="img-fluid" style="background-image: url(https://corwyn.wdfiles.com/local--files/castle-ravenwood/HAUNTED%20CASTLE-9.jpg)" alt="">
-
-             <img class="img-fluid" style="background-image: url('https://slovander.sk/wp-content/uploads/2020/10/Bytosti-z-nasich-povier-predstavivost-alebo-realita-13-1170x635.png')"/>
             <div class="mx-auto text-center">
-                <h2 class="mx-auto my-0 text-uppercase-white">medieval castles and their legends </h2>
-                <h2 class="text-white-50 mx-auto mt-2 mb-5"></h2>
+               medieval castles and their legends
+                <h2 class="text-white-50 mx-auto mt-2 mb-5">    medieval castles and their legends</h2>
             </div>
         </div>
     </header>
 
 
-    <!-- About-->
+    <!-- About--
     <section class="about-section text-center" id="about">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 mx-auto">
-                    <h2 class="text-white mb-4">why not let your imagination run wild in one of these historic places?</h2>
+                    <h2 class="text-white mb-4"> why not let your imagination run wild in one of these historic places?</h2>
+                    <p class="text-white-50">
+                            <h1> why not let your imagination run wild in one of these historic places?</h1>
+                   
+                        </p>
+
+                </div>
+            </div>
             <img class="img-fluid" style="background-image: url('https://slovander.sk/wp-content/uploads/2020/10/Bytosti-z-nasich-povier-predstavivost-alebo-realita-13-1170x635.png')"/>
-            </div>
-            </div>
+            
         </div>
-    </section>
+    </section>   
+    ----------->
+    {% extends "base.html" %}
+ { block content }
    
-<section>
-        <section class="projects-section bg-light" id="projects" src="{{ url_for('img/demo-image-01.jpg') }}" alt="" />
-<div class="container">
+
+        <section class="projects-section bg-light" id="projects"  href="url(https://slovander.sk/wp-content/uploads/2020/10/Bytosti-z-nasich-povier-predstavivost-alebo-realita-13-1170x635.png')" alt="">
+        
+        <section class="signup-section" id="signup">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 col-lg-8 mx-auto text-center">
+                          <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+                    <div class="col-xl-8 col-lg-7">
+                    
+                    </div>
+                </div>
+            </div>
+    
+    <!-- Contact-->
+
 
                 <div class="row align-items-center no-gutters mb-4 mb-lg-5">
-                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/bg-masthead.jpg" alt=""></div>
+                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="{{ url_for('img/bg-masthead.jpg') }}" alt=""></div>
                     <div class="col-xl-4 col-lg-5">
                         <div class="featured-text text-center text-lg-left">
                             <h4>Shoreline</h4>
@@ -77,7 +106,7 @@
                 </div>
 				
                  <div class="row align-items-center no-gutters mb-4 mb-lg-5">
-                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/bg-masthead.jpg" alt=""></div>
+                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="{{ url_for('img/bg-masthead.jpg') }}" alt=""></div>
                     <div class="col-xl-4 col-lg-5">
                         <div class="featured-text text-center text-lg-left">
                             <h4>Shoreline</h4>
@@ -86,7 +115,7 @@
                     </div>
                 </div>
            <div class="row align-items-center no-gutters mb-4 mb-lg-5">
-                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/bg-masthead.jpg" alt=""></div>
+                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="{{ url_for('img/bg-masthead.jpg') }}" alt=""></div>
                     <div class="col-xl-4 col-lg-5">
                         <div class="featured-text text-center text-lg-left">
                             <h4>Shoreline</h4>
@@ -95,7 +124,7 @@
                     </div>
                 </div>
                  <div class="row align-items-center no-gutters mb-4 mb-lg-5">
-                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/bg-masthead.jpg" alt=""></div>
+                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="{{ url_for('img/bg-masthead.jpg') }}" alt=""></div>
                     <div class="col-xl-4 col-lg-5">
                         <div class="featured-text text-center text-lg-left">
                             <h4>Shoreline</h4>
@@ -104,7 +133,7 @@
                     </div>
                 </div>
                 <div class="row align-items-center no-gutters mb-4 mb-lg-5">
-                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/bg-masthead.jpg" alt=""></div>
+                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="{{ url_for('img/bg-masthead.jpg') }}" alt=""></div>
                     <div class="col-xl-4 col-lg-5">
                         <div class="featured-text text-center text-lg-left">
                             <h4>Shoreline</h4>
@@ -113,7 +142,7 @@
                     </div>
                 </div>
                 <div class="row align-items-center no-gutters mb-4 mb-lg-5">
-                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/bg-masthead.jpg" alt=""></div>
+                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="{{ url_for('img/bg-masthead.jpg') }}" alt=""></div>
                     <div class="col-xl-4 col-lg-5">
                         <div class="featured-text text-center text-lg-left">
                             <h4>Shoreline</h4>
@@ -121,36 +150,15 @@
                         </div>
                     </div>
                 </div>
-                <div class="row align-items-center no-gutters mb-4 mb-lg-5">
-                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/bg-masthead.jpg" alt=""></div>
-                    <div class="col-xl-4 col-lg-5">
-                        <div class="featured-text text-center text-lg-left">
-                            <h4>Shoreline</h4>
-                            <p class="text-black-50 mb-0">To speak of Slovak culture and art is to note a tapestry of traditions, customs, folklore, and on the same breath mention its staging under different regimes, and the European context overarching it. Long steeped in an agrarian life while being subjects under the Austro-Hungarian Empire, and then after WWII, as comrades within a Soviet satellite state, Slovaks sought to preserve not only their language but also all those distinctive markings of their culture.</p>
-                        </div>
-                    </div>
-                </div>
-                </div>
-</section>
-
   
- <!-- Signup-->
-        <section class="signup-section" id="signup">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-10 col-lg-8 mx-auto text-center">
-                       Castles, chateaux and manors in Slovakia form an important part of immovable cultural
-monuments. Today, many of these buildings serve the development of culture such as museums, galleries and are
-made available for tourism. In addition to cultural, educational and aesthetic functions
-they also represent significant material values. Therefore, it is necessary to protect ,record and document those historical objects.
                     
                     </div>
                 </div>
-            </div>
+    
         </section>
     <!-- Contact-->
-
-      <!-- Contact-->
+{ endblock }
+      <!-- Contact--
         <section class="contact-section bg-black">
             <div class="container">
                 <div class="row">
@@ -195,13 +203,12 @@ they also represent significant material values. Therefore, it is necessary to p
     <footer class="footer bg-black small text-center text-white-50">
         <div class="container">Copyright © H 2021</div>
     </footer>
-    <script src="url('https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js')"></script>
-    <script src= "url('https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js')"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
     <script>
         $("#copyright").text(new Date().getFullYear());
      </script>
-   
+       
 </body>
 </html>
-

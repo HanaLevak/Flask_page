@@ -4,12 +4,8 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-     <meta name="theme-color" content="#dd3d31">
-    <meta name="msapplication-TileColor" content="#dd3d31"/>
     <title>legends</title>
-    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='img/favicon.ico') }}" />
-
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"/>
+      <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='vendor/fontawesome-free/css/fontawesome.min.css') }}"/>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}"/>
     </head>
     
@@ -17,7 +13,7 @@
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
         <div class="container">
-            <a class="navbar-brand" href="{{ url_for('index') }}"> home </a>
+            <a class="navbar-brand" href="{{ url_for('index') }}"> home page </a>
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
                 aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 Menu
@@ -30,7 +26,7 @@
                         <a class="nav-link js-scroll-trigger" href="{{ url_for('index') }}">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="{{ url_for('stories') }}">page2</a>
+                        <a class="nav-link js-scroll-trigger" href="{{ url_for('legends') }}">Legends</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="{{ url_for('contact') }}">Contact me</a>
@@ -42,9 +38,12 @@
     <!-- Masthead-->
     <header class="masthead">
         <div class="container d-flex h-100 align-items-center">
+      <img class="img-fluid" style="background-image: url(https://corwyn.wdfiles.com/local--files/castle-ravenwood/HAUNTED%20CASTLE-9.jpg)" alt="">
+
+             <img class="img-fluid" style="background-image: url('https://slovander.sk/wp-content/uploads/2020/10/Bytosti-z-nasich-povier-predstavivost-alebo-realita-13-1170x635.png')"/>
             <div class="mx-auto text-center">
-                <h1 class="mx-auto my-0 text-uppercase">medieval castles and their legends </h1>
-                <h2 class="text-white-50 mx-auto mt-2 mb-5">why not let your imagination run wild in one of these historic places?</h2>
+                <h2 class="mx-auto my-0 text-uppercase-white">medieval castles and their legends </h2>
+                <h2 class="text-white-50 mx-auto mt-2 mb-5"></h2>
             </div>
         </div>
     </header>
@@ -55,29 +54,26 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 mx-auto">
-                    <h2 class="text-white mb-4"></h2>
-                    <p class="text-white-50">
-                            <h1> why not let your imagination run wild in one of these historic places?</h1>
-                   
-                        </p>
-
-                </div>
-            </div>
+                    <h2 class="text-white mb-4">why not let your imagination run wild in one of these historic places?</h2>
             <img class="img-fluid" style="background-image: url('https://slovander.sk/wp-content/uploads/2020/10/Bytosti-z-nasich-povier-predstavivost-alebo-realita-13-1170x635.png')"/>
-            
+            </div>
+            </div>
         </div>
     </section>
    
- {% block content %}
-        {% endblock %}
+{% block title %}
+      
 
-   
+   {% endblock %}
  <!-- Signup-->
         <section class="signup-section" id="signup">
             <div class="container">
                 <div class="row">
                     <div class="col-md-10 col-lg-8 mx-auto text-center">
-                       
+                       Castles, chateaux and manors in Slovakia form an important part of immovable cultural
+monuments. Today, many of these buildings serve the development of culture such as museums, galleries and are
+made available for tourism. In addition to cultural, educational and aesthetic functions
+they also represent significant material values. Therefore, it is necessary to protect ,record and document those historical objects.
                     
                     </div>
                 </div>
@@ -130,11 +126,12 @@
     <footer class="footer bg-black small text-center text-white-50">
         <div class="container">Copyright © H 2021</div>
     </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="url('https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js')"></script>
+    <script src= "url('https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js')"></script>
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
     <script>
         $("#copyright").text(new Date().getFullYear());
      </script>
+   
 </body>
 </html>

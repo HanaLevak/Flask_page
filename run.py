@@ -9,12 +9,12 @@ app.secret_key = os.environ.get("SECRET_KEY")
 
 @app.route("/")
 def index():
-    return render_template('index.html')
+    return render_template("index.html",  page_title="home")
 
 
-@app.route("/page2")
-def page3():
-    return render_template("page2.html", page_title="page2")
+@app.route("/legends")
+def legends():
+    return render_template("legends.html", page_title="legends")
 
 
 @app.route("/contact", methods=["GET", "POST"])
