@@ -1,207 +1,119 @@
-{% extends "base.html" %}
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <title>legends</title>
-      <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='vendor/fontawesome-free/css/fontawesome.min.css') }}"/>
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}"/>
-    </head>
-    
-<body id="page-top">
-    <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-        <div class="container">
-            <a class="navbar-brand" href="{{ url_for('index') }}"> home page </a>
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                Menu
-                <i class="fas fa-bars"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
 
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="{{ url_for('index') }}">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="{{ url_for('legends') }}">Legends</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="{{ url_for('contact') }}">Contact me</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!-- Masthead-->
+
     <header class="masthead">
         <div class="container d-flex h-100 align-items-center">
-      <img class="img-fluid" style="background-image: url(https://corwyn.wdfiles.com/local--files/castle-ravenwood/HAUNTED%20CASTLE-9.jpg)" alt="">
+            <img class="img-fluid"
+                src=" https://slovander.sk/wp-content/uploads/2020/06/Slovensk%C3%A9-hrady-na-svetov%C3%BDch-filmov%C3%BDch-pl%C3%A1tnach-1-768x512.jpg"
+                alt="">
 
-             <img class="img-fluid" style="background-image: url('https://slovander.sk/wp-content/uploads/2020/10/Bytosti-z-nasich-povier-predstavivost-alebo-realita-13-1170x635.png')"/>
+            <img class="img-fluid mb-3 mb-lg-0" src="url('https://corwyn.wdfiles.com/local--files/castle-ravenwood/HAUNTED%20CASTLE-9.jpg')" alt="">
+
+
+            <span class="section-heading"> Walk through our medieval castles is a real experience!</span>
+
+            <p>Slovakia is replete with gothic churches, medieval towns, macabre torture inventions, as well as majestic mountains and looming castles
+                along bucolic rural landscapes. Fittingly, legend after legend arose in such surroundings, many of which were based on enigmatic
+                historical figures. All that beauty serve as open invitations to the stretches of imagination. But then again, the best legends rely
+                on a least some smidgeon of truth. And so, during the rare moments when the villagers met during the winters for yarning and there, in
+                addition to magical fictional fairy tales, they told stories. These stories have been enriched with elements of reality. Real people
+                appear in them and the places where the stories take place are also real..</p>
+
+            <img class="img-fluid"
+                style="background-image: url('https://slovander.sk/wp-content/uploads/2020/10/Bytosti-z-nasich-povier-predstavivost-alebo-realita-13-1170x635.png')" />
             <div class="mx-auto text-center">
-                <h2 class="mx-auto my-0 text-uppercase-white">medieval castles and their legends </h2>
+                <h2 class="mx-auto my-0 text-uppercase-white">Spoken stories and Superstitious creaturess </h2>
                 <h2 class="text-white-50 mx-auto mt-2 mb-5"></h2>
             </div>
         </div>
     </header>
 
-
+{ endblock }
     <!-- About-->
+    <section class="projects-section bg-light" id="projects" src="static/img/bg-masthead.jpg" alt="" />
     <section class="about-section text-center" id="about">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 mx-auto">
                     <h2 class="text-white mb-4">why not let your imagination run wild in one of these historic places?</h2>
-            <img class="img-fluid" style="background-image: url('https://slovander.sk/wp-content/uploads/2020/10/Bytosti-z-nasich-povier-predstavivost-alebo-realita-13-1170x635.png')"/>
-            </div>
+                    <img class="img-fluid"
+                        style="background-image: url('https://slovander.sk/wp-content/uploads/2020/10/Bytosti-z-nasich-povier-predstavivost-alebo-realita-13-1170x635.png')" />
+                </div>
+
+                <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="static/img/bg-masthead.jpg" alt=""></div>
+                    <div class="col-xl-4 col-lg-5">
+                        <div class="featured-text text-center text-lg-left">
+                            <h4>Shoreline</h4>
+                            <p class="text-black-50 mb-0">To speak of Slovak culture and art is to note a tapestry of traditions, customs, folklore,
+                                and on the same breath mention its staging under different regimes, and the European context overarching it. Long
+                                steeped in an agrarian life while being subjects under the Austro-Hungarian Empire, and then after WWII, as comrades
+                                within a Soviet satellite state, Slovaks sought to preserve not only their language but also all those distinctive
+                                markings of their culture.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="static/img/bg-masthead.jpg" alt=""></div>
+                    <div class="col-xl-4 col-lg-5">
+                        <div class="featured-text text-center text-lg-left">
+                            <h4>Shoreline</h4>
+                            <p class="text-black-50 mb-0">To speak of Slovak culture and art is to note a tapestry of traditions, customs, folklore,
+                                and on the same breath mention its staging under different regimes, and the European context overarching it. Long
+                                steeped in an agrarian life while being subjects under the Austro-Hungarian Empire, and then after WWII, as comrades
+                                within a Soviet satellite state, Slovaks sought to preserve not only their language but also all those distinctive
+                                markings of their culture.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0"
+                            src="https://mobil.citylife.sk/sites/default/files/akcia/plagat/CITYLIFE/202002/84987297_1086676811673591_4784237106933268480_o_1.jpg"
+                            alt=""></div>
+                    <div class="col-xl-4 col-lg-5">
+                        <div class="featured-text text-center text-lg-left">
+                            <h4>Shoreline</h4>
+                            <p class="text-black-50 mb-0">To speak of Slovak culture and art is to note a tapestry of traditions, customs, folklore,
+                                and on the same breath mention its staging under different regimes, and the European context overarching it. Long
+                                steeped in an agrarian life while being subjects under the Austro-Hungarian Empire, and then after WWII, as comrades
+                                within a Soviet satellite state, Slovaks sought to preserve not only their language but also all those distinctive
+                                markings of their culture.</p>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
-   
-<section>
-        <section class="projects-section bg-light" id="projects" src="{{ url_for('img/demo-image-01.jpg') }}" alt="" />
-<div class="container">
-
-                <div class="row align-items-center no-gutters mb-4 mb-lg-5">
-                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/bg-masthead.jpg" alt=""></div>
+----------------------------------------------------------------------------------------------------------------------------
+  <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0"
+                            src="https://mobil.citylife.sk/sites/default/files/akcia/plagat/CITYLIFE/202002/84987297_1086676811673591_4784237106933268480_o_1.jpg"
+                            alt=""></div>
                     <div class="col-xl-4 col-lg-5">
                         <div class="featured-text text-center text-lg-left">
                             <h4>Shoreline</h4>
-                            <p class="text-black-50 mb-0">To speak of Slovak culture and art is to note a tapestry of traditions, customs, folklore, and on the same breath mention its staging under different regimes, and the European context overarching it. Long steeped in an agrarian life while being subjects under the Austro-Hungarian Empire, and then after WWII, as comrades within a Soviet satellite state, Slovaks sought to preserve not only their language but also all those distinctive markings of their culture.</p>
+                            <p class="text-black-50 mb-0">To speak of Slovak culture and art is to note a tapestry of traditions, customs, folklore,
+                                and on the same breath mention its staging under different regimes, and the European context overarching it. Long
+                                steeped in an agrarian life while being subjects under the Austro-Hungarian Empire, and then after WWII, as comrades
+                                within a Soviet satellite state, Slovaks sought to preserve not only their language but also all those distinctive
+                                markings of their culture.</p>
                         </div>
                     </div>
                 </div>
-				
-                 <div class="row align-items-center no-gutters mb-4 mb-lg-5">
-                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/bg-masthead.jpg" alt=""></div>
-                    <div class="col-xl-4 col-lg-5">
-                        <div class="featured-text text-center text-lg-left">
-                            <h4>Shoreline</h4>
-                            <p class="text-black-50 mb-0">To speak of Slovak culture and art is to note a tapestry of traditions, customs, folklore, and on the same breath mention its staging under different regimes, and the European context overarching it. Long steeped in an agrarian life while being subjects under the Austro-Hungarian Empire, and then after WWII, as comrades within a Soviet satellite state, Slovaks sought to preserve not only their language but also all those distinctive markings of their culture.</p>
-                        </div>
-                    </div>
-                </div>
-           <div class="row align-items-center no-gutters mb-4 mb-lg-5">
-                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/bg-masthead.jpg" alt=""></div>
-                    <div class="col-xl-4 col-lg-5">
-                        <div class="featured-text text-center text-lg-left">
-                            <h4>Shoreline</h4>
-                            <p class="text-black-50 mb-0">To speak of Slovak culture and art is to note a tapestry of traditions, customs, folklore, and on the same breath mention its staging under different regimes, and the European context overarching it. Long steeped in an agrarian life while being subjects under the Austro-Hungarian Empire, and then after WWII, as comrades within a Soviet satellite state, Slovaks sought to preserve not only their language but also all those distinctive markings of their culture.</p>
-                        </div>
-                    </div>
-                </div>
-                 <div class="row align-items-center no-gutters mb-4 mb-lg-5">
-                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/bg-masthead.jpg" alt=""></div>
-                    <div class="col-xl-4 col-lg-5">
-                        <div class="featured-text text-center text-lg-left">
-                            <h4>Shoreline</h4>
-                            <p class="text-black-50 mb-0">To speak of Slovak culture and art is to note a tapestry of traditions, customs, folklore, and on the same breath mention its staging under different regimes, and the European context overarching it. Long steeped in an agrarian life while being subjects under the Austro-Hungarian Empire, and then after WWII, as comrades within a Soviet satellite state, Slovaks sought to preserve not only their language but also all those distinctive markings of their culture.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row align-items-center no-gutters mb-4 mb-lg-5">
-                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/bg-masthead.jpg" alt=""></div>
-                    <div class="col-xl-4 col-lg-5">
-                        <div class="featured-text text-center text-lg-left">
-                            <h4>Shoreline</h4>
-                            <p class="text-black-50 mb-0">To speak of Slovak culture and art is to note a tapestry of traditions, customs, folklore, and on the same breath mention its staging under different regimes, and the European context overarching it. Long steeped in an agrarian life while being subjects under the Austro-Hungarian Empire, and then after WWII, as comrades within a Soviet satellite state, Slovaks sought to preserve not only their language but also all those distinctive markings of their culture.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row align-items-center no-gutters mb-4 mb-lg-5">
-                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/bg-masthead.jpg" alt=""></div>
-                    <div class="col-xl-4 col-lg-5">
-                        <div class="featured-text text-center text-lg-left">
-                            <h4>Shoreline</h4>
-                            <p class="text-black-50 mb-0">To speak of Slovak culture and art is to note a tapestry of traditions, customs, folklore, and on the same breath mention its staging under different regimes, and the European context overarching it. Long steeped in an agrarian life while being subjects under the Austro-Hungarian Empire, and then after WWII, as comrades within a Soviet satellite state, Slovaks sought to preserve not only their language but also all those distinctive markings of their culture.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row align-items-center no-gutters mb-4 mb-lg-5">
-                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/bg-masthead.jpg" alt=""></div>
-                    <div class="col-xl-4 col-lg-5">
-                        <div class="featured-text text-center text-lg-left">
-                            <h4>Shoreline</h4>
-                            <p class="text-black-50 mb-0">To speak of Slovak culture and art is to note a tapestry of traditions, customs, folklore, and on the same breath mention its staging under different regimes, and the European context overarching it. Long steeped in an agrarian life while being subjects under the Austro-Hungarian Empire, and then after WWII, as comrades within a Soviet satellite state, Slovaks sought to preserve not only their language but also all those distinctive markings of their culture.</p>
-                        </div>
-                    </div>
-                </div>
-                </div>
-</section>
-
-  
- <!-- Signup-->
-        <section class="signup-section" id="signup">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-10 col-lg-8 mx-auto text-center">
-                       Castles, chateaux and manors in Slovakia form an important part of immovable cultural
-monuments. Today, many of these buildings serve the development of culture such as museums, galleries and are
-made available for tourism. In addition to cultural, educational and aesthetic functions
-they also represent significant material values. Therefore, it is necessary to protect ,record and document those historical objects.
-                    
-                    </div>
-                </div>
-            </div>
-        </section>
-    <!-- Contact-->
 
       <!-- Contact-->
-        <section class="contact-section bg-black">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4 mb-3 mb-md-0">
-                        <div class="card py-4 h-100">
-                            <div class="card-body text-center">
-                                <i class="fas fa-map-marked-alt text-primary mb-2"></i>
-                                <h4 class="text-uppercase m-0">Address</h4>
-                                <hr class="my-4" />
-                                <div class="small text-black-50">4923 Market Street, Orlando FL</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-3 mb-md-0">
-                        <div class="card py-4 h-100">
-                            <div class="card-body text-center">
-                                <i class="fas fa-envelope text-primary mb-2"></i>
-                                <h4 class="text-uppercase m-0">Email</h4>
-                                <hr class="my-4" />
-                                <div class="small text-black-50"><a href="#!">hello@yourdomain.com</a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-3 mb-md-0">
-                        <div class="card py-4 h-100">
-                            <div class="card-body text-center">
-                                <i class="fas fa-mobile-alt text-primary mb-2"></i>
-                                <h4 class="text-uppercase m-0">Phone</h4>
-                                <hr class="my-4" />
-                                <div class="small text-black-50">+1 (555) 902-8832</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="social d-flex justify-content-center">
-                    <a class="mx-2" href="#!"><i class="fab fa-twitter"></i></a>
-                    <a class="mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
-                    <a class="mx-2" href="#!"><i class="fab fa-github"></i></a>
+    <section class="contact-section bg-black text-uppercase-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-lg-8 mx-auto text-white-center">
+                    Castles, chateaux and manors in Slovakia form an important part of immovable cultural
+                    monuments. Today, many of these buildings serve the development of culture such as museums, galleries and are
+                    made available for tourism. In addition to cultural, educational and aesthetic functions
+                    they also represent significant material values. Therefore, it is necessary to protect ,record and document those historical
+                    objects.
+
                 </div>
             </div>
-        </section>
-    <footer class="footer bg-black small text-center text-white-50">
-        <div class="container">Copyright © H 2021</div>
-    </footer>
-    <script src="url('https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js')"></script>
-    <script src= "url('https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js')"></script>
-    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
-    <script>
-        $("#copyright").text(new Date().getFullYear());
-     </script>
-   
-</body>
-</html>
-
+  

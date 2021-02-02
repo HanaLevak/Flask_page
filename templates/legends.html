@@ -1,214 +1,30 @@
-<!---------
-    !DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <title>legends</title>
-    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='static/img/favicon.ico') }}" />
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='vendor/fontawesome-free/webfonts') }}"/>
-      <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='vendor/fontawesome-free/css/fontawesome.min.css') }}"/>
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}"/>
-    </head>
-    
-<body id="page-top">
-    <!-- Navigation--
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-        <div class="container">
-            <a class="navbar-brand" href="{{ url_for('index') }}"> home page </a>
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                Menu
-                <i class="fas fa-bars"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="{{ url_for('index') }}">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="{{ url_for('legends') }}">Legends</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="{{ url_for('contact') }}">Contact</a>
-                    </li>
-                </ul>
-            </div>
+{% extends "base.html" %}
+{% block content %}
+    <h2>explore</h2>
+<section id="members">
+<div class="row align-items-center no-gutters mb-4 mb-lg-5">
+    <div class="col-xl-8 col-lg-7">
+        <img class="img-fluid mb-3 mb-lg-0" src="{{ member.image_source }}" alt=""></div>
+ <h3>{{ member.name }}</h3>
+    <div class="col-xl-4 col-lg-5">
+        <div class="featured-text text-center text-lg-left">
+            <p class="text-black-50 mb-0">{{ member.description }}</p>
         </div>
-    </nav>
+         <div class="col-xl-4 col-lg-4"><img class="img-fluid mb-3 mb-lg-0" src="{{ member.image_source2 }}"></div>
+    </div>
+</div>
 
-    { extends "base.html" }
-
-{ block title } MySample { endblock }
-
-{ block content }
-  Cool content here
-{ endblock }
-    <!-- Masthead--
-    <header class="masthead">
-        <div class="container d-flex h-100 align-items-center">
-            <div class="mx-auto text-center">
-               medieval castles and their legends
-                <h2 class="text-white-50 mx-auto mt-2 mb-5">    medieval castles and their legends</h2>
-            </div>
+    <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+        <div class="col-xl-5 col-lg-4">
+            <img class="img-fluid mb-3 mb-lg-0" src="{{ member.image_source }}" alt=""></div>
+                <h3>{{ member.name }}</h3>
+                 <div class="col-xl-4 col-lg-4">
+        <div class="featured-text text-center text-lg-left">
+        <p class="text-black-50 mb-0">{{ member.description }}</p>
+        <div class="col-xl-4 col-lg-4"><img class="img-fluid mb-3 mb-lg-0" src="{{ member.image_source2 }}"></div>
         </div>
-    </header>
+                 </div>
+    </div>
+</section>
 
-
-    <!-- About--
-    <section class="about-section text-center" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 mx-auto">
-                    <h2 class="text-white mb-4"> why not let your imagination run wild in one of these historic places?</h2>
-                    <p class="text-white-50">
-                            <h1> why not let your imagination run wild in one of these historic places?</h1>
-                   
-                        </p>
-
-                </div>
-            </div>
-            <img class="img-fluid" style="background-image: url('https://slovander.sk/wp-content/uploads/2020/10/Bytosti-z-nasich-povier-predstavivost-alebo-realita-13-1170x635.png')"/>
-            
-        </div>
-    </section>   
-    ----------->
-    {% extends "base.html" %}
- { block content }
-   
-
-        <section class="projects-section bg-light" id="projects"  href="url(https://slovander.sk/wp-content/uploads/2020/10/Bytosti-z-nasich-povier-predstavivost-alebo-realita-13-1170x635.png')" alt="">
-        
-        <section class="signup-section" id="signup">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-10 col-lg-8 mx-auto text-center">
-                          <div class="row align-items-center no-gutters mb-4 mb-lg-5">
-                    <div class="col-xl-8 col-lg-7">
-                    
-                    </div>
-                </div>
-            </div>
-    
-    <!-- Contact-->
-
-
-                <div class="row align-items-center no-gutters mb-4 mb-lg-5">
-                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="{{ url_for('img/bg-masthead.jpg') }}" alt=""></div>
-                    <div class="col-xl-4 col-lg-5">
-                        <div class="featured-text text-center text-lg-left">
-                            <h4>Shoreline</h4>
-                            <p class="text-black-50 mb-0">To speak of Slovak culture and art is to note a tapestry of traditions, customs, folklore, and on the same breath mention its staging under different regimes, and the European context overarching it. Long steeped in an agrarian life while being subjects under the Austro-Hungarian Empire, and then after WWII, as comrades within a Soviet satellite state, Slovaks sought to preserve not only their language but also all those distinctive markings of their culture.</p>
-                        </div>
-                    </div>
-                </div>
-				
-                 <div class="row align-items-center no-gutters mb-4 mb-lg-5">
-                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="{{ url_for('img/bg-masthead.jpg') }}" alt=""></div>
-                    <div class="col-xl-4 col-lg-5">
-                        <div class="featured-text text-center text-lg-left">
-                            <h4>Shoreline</h4>
-                            <p class="text-black-50 mb-0">To speak of Slovak culture and art is to note a tapestry of traditions, customs, folklore, and on the same breath mention its staging under different regimes, and the European context overarching it. Long steeped in an agrarian life while being subjects under the Austro-Hungarian Empire, and then after WWII, as comrades within a Soviet satellite state, Slovaks sought to preserve not only their language but also all those distinctive markings of their culture.</p>
-                        </div>
-                    </div>
-                </div>
-           <div class="row align-items-center no-gutters mb-4 mb-lg-5">
-                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="{{ url_for('img/bg-masthead.jpg') }}" alt=""></div>
-                    <div class="col-xl-4 col-lg-5">
-                        <div class="featured-text text-center text-lg-left">
-                            <h4>Shoreline</h4>
-                            <p class="text-black-50 mb-0">To speak of Slovak culture and art is to note a tapestry of traditions, customs, folklore, and on the same breath mention its staging under different regimes, and the European context overarching it. Long steeped in an agrarian life while being subjects under the Austro-Hungarian Empire, and then after WWII, as comrades within a Soviet satellite state, Slovaks sought to preserve not only their language but also all those distinctive markings of their culture.</p>
-                        </div>
-                    </div>
-                </div>
-                 <div class="row align-items-center no-gutters mb-4 mb-lg-5">
-                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="{{ url_for('img/bg-masthead.jpg') }}" alt=""></div>
-                    <div class="col-xl-4 col-lg-5">
-                        <div class="featured-text text-center text-lg-left">
-                            <h4>Shoreline</h4>
-                            <p class="text-black-50 mb-0">To speak of Slovak culture and art is to note a tapestry of traditions, customs, folklore, and on the same breath mention its staging under different regimes, and the European context overarching it. Long steeped in an agrarian life while being subjects under the Austro-Hungarian Empire, and then after WWII, as comrades within a Soviet satellite state, Slovaks sought to preserve not only their language but also all those distinctive markings of their culture.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row align-items-center no-gutters mb-4 mb-lg-5">
-                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="{{ url_for('img/bg-masthead.jpg') }}" alt=""></div>
-                    <div class="col-xl-4 col-lg-5">
-                        <div class="featured-text text-center text-lg-left">
-                            <h4>Shoreline</h4>
-                            <p class="text-black-50 mb-0">To speak of Slovak culture and art is to note a tapestry of traditions, customs, folklore, and on the same breath mention its staging under different regimes, and the European context overarching it. Long steeped in an agrarian life while being subjects under the Austro-Hungarian Empire, and then after WWII, as comrades within a Soviet satellite state, Slovaks sought to preserve not only their language but also all those distinctive markings of their culture.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row align-items-center no-gutters mb-4 mb-lg-5">
-                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="{{ url_for('img/bg-masthead.jpg') }}" alt=""></div>
-                    <div class="col-xl-4 col-lg-5">
-                        <div class="featured-text text-center text-lg-left">
-                            <h4>Shoreline</h4>
-                            <p class="text-black-50 mb-0">To speak of Slovak culture and art is to note a tapestry of traditions, customs, folklore, and on the same breath mention its staging under different regimes, and the European context overarching it. Long steeped in an agrarian life while being subjects under the Austro-Hungarian Empire, and then after WWII, as comrades within a Soviet satellite state, Slovaks sought to preserve not only their language but also all those distinctive markings of their culture.</p>
-                        </div>
-                    </div>
-                </div>
-  
-                    
-                    </div>
-                </div>
-    
-        </section>
-    <!-- Contact-->
-{ endblock }
-      <!-- Contact--
-        <section class="contact-section bg-black">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4 mb-3 mb-md-0">
-                        <div class="card py-4 h-100">
-                            <div class="card-body text-center">
-                                <i class="fas fa-map-marked-alt text-primary mb-2"></i>
-                                <h4 class="text-uppercase m-0">Address</h4>
-                                <hr class="my-4" />
-                                <div class="small text-black-50">4923 Market Street, Orlando FL</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-3 mb-md-0">
-                        <div class="card py-4 h-100">
-                            <div class="card-body text-center">
-                                <i class="fas fa-envelope text-primary mb-2"></i>
-                                <h4 class="text-uppercase m-0">Email</h4>
-                                <hr class="my-4" />
-                                <div class="small text-black-50"><a href="#!">hello@yourdomain.com</a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-3 mb-md-0">
-                        <div class="card py-4 h-100">
-                            <div class="card-body text-center">
-                                <i class="fas fa-mobile-alt text-primary mb-2"></i>
-                                <h4 class="text-uppercase m-0">Phone</h4>
-                                <hr class="my-4" />
-                                <div class="small text-black-50">+1 (555) 902-8832</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="social d-flex justify-content-center">
-                    <a class="mx-2" href="#!"><i class="fab fa-twitter"></i></a>
-                    <a class="mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
-                    <a class="mx-2" href="#!"><i class="fab fa-github"></i></a>
-                </div>
-            </div>
-        </section>
-    <footer class="footer bg-black small text-center text-white-50">
-        <div class="container">Copyright © H 2021</div>
-    </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
-    <script>
-        $("#copyright").text(new Date().getFullYear());
-     </script>
-       
-</body>
-</html>
+{% endblock %}
