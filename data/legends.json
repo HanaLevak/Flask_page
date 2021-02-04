@@ -58,7 +58,7 @@
         "name": "bosorka striga/baba-jaga",
         "description": "Bosorka is one of the most famous superstition creatures. She considered herself a woman who, through supernatural powers.She had the ability to cause long-term downpours, lightning, hail, infertility and was responsible for the spread of the plague. Magical plants, protective signs or objects (cross, garlic, poppy, willow, rosehip or hawthorn rods, sharp iron objects) were used to protect against the witch. If the witch was helpful, they called her a witch.Did you know that we have a village of witches in Slovakia? The village of Ružindol is located in the Trnava region and once witches lived there, which were even burned. As Slovak ethnologist Nádaská says, Matej Bel has already mentioned in her Notices that Ružindol was a village of witches, where many women practiced worship or enchantment - often women who were midwives, folk healers, understood nature and were able to use force. herbs. Historian Jozef Šimončič, who deals with the history of Trnava, in his book My Trnava again described the last trial with two Ružindol witches, who were burned in August 1684. They suspected them of witchcraft, both were tested with water, and because they swam, they were given to the executioner.",
         "locality": "mainly Trnava region",
-        "image_source": "https://i.refresher.sk/public/vladimir-micuda/wikipedia/800px-John_William_Waterhouse_-_Magic_Circle.jpg ",
+        "image_source": "https://i.refresher.sk/public/daimyo/stryga_1.jpg ",
         "image_source2": "https://seasonace.sk/wp-content/uploads/2020/09/Strigy%C4%8Darodejnice_cover.jpg "
     },
     {
@@ -87,13 +87,27 @@
         "description": "Permoník, guardian and protector of minerals and treasures, a symbol of mining in Slovakia. The Permons inhabited underground passages and mining tunnels in larger communities, digging and caring for ore and rare minerals. They helped the miners, warned them of the dangers, showed where to dig to find the treasure. However, they mercilessly punished those who behaved noisily underground and did not respect their orders and prohibitions. They only made their presence known by knocking; if they appeared to the miner, it meant danger and backfilling of the shaft.",
         "locality": " underground",
         "image_source": "https://static.sashe.sk/photos/b/1/6/8/7/b-1687538_46904f9004.jpg",
-        "image_source2": "http://www.astropop.com/morbid/Krampus5.jpg"
+        "image_source2": "https://i.refresher.sk/public/daimyo/dwarwes.jpg"
     },
     {
-        "name": "National.park/Janosikove holes",
-"description": "The most beautiful and most common part of Mala Fatra are Jánošík's holes, formed by systems of shadows, canyons and various scenery of rock formations.They are located in the Rozsutce nature reserve consisting of three parts: the Lower Holes, the Upper Holes and the New Holes. The so-called A hole stream that flows through them. There are more than 20 waterfalls in the holes and together they form the waterfalls of Dierový potok.The enchanting nature of Mala Fatra loves several beautiful waterfalls, beautiful high rocks and forest paths.",
+        "name":"Krampus and St.Nikolaus",
+        "description":"Krampus is a horned anthropomorphic figure, a guide of St. Nicholaus (ST.Nicolaus is one of the most revered saints in all of Christianity) The character of Krampus appears on December 5, accompanied by St. Mikuláš. .Good children Mikulas rewards with gifts, while Krampus has the task of punishing disobedient children. Krampus eats disobedient children and around December 22 he transforms into a normal human being and remembers nothing",
+        "locality": "Czech,Slovakia,Austria area",
+        "image_source": "http://www.astropop.com/morbid/Krampus5.jpg",
+         "image_source2": "https://upload.wikimedia.org/wikipedia/commons/2/21/Nikolaus_krampus.jpg"
+    }
+    ,
+    {
+        "name": "National park/ Janosikove holes",
+        "description": "The most beautiful and most common part of Mala Fatra are Jánošík's holes, formed by systems of shadows, canyons and various scenery of rock formations.They are located in the Rozsutce nature reserve consisting of three parts: the Lower Holes, the Upper Holes and the New Holes. The so-called A hole stream that flows through them. There are more than 20 waterfalls in the holes and together they form the waterfalls of Dierový potok.The enchanting nature of Mala Fatra loves several beautiful waterfalls, beautiful high rocks and forest paths.",
+        "locality":"Mala Fatra",
         "image_source": "https://images6.fanpop.com/image/photos/41500000/Slovak-Paradise-National-Park-Slovakia-slovakia-41593459-650-430.jpg",
         "image_source2": "https://images6.fanpop.com/image/photos/41500000/Zilina-Region-Slovakia-slovakia-41593305-275-183.jpg"
     },
     {
-        "name": "Castles"
+        "name": "Castles",
+        "description":" They have the characteristic architecture hey were mostly situated on mountain ridges, on rocky ridges or on places where wetlands or watercourses form their natural protection.At the 12th century , Castles..chateaux and manors served as residential and comfortable buildings for kings, queens, princesses and other higher nobility.Castles, chateaux and manors in Slovakia form an important part of immovable cultural monuments. Today, many of these buildings serve the development of culture such as museums, galleries and are made available for tourism. In addition to cultural, educational and aesthetic functions they also represent significant material values. Therefore, it is necessary to protect ,record and document those historical objects. http://sacr3-files.s3-website-eu-west-1.amazonaws.com/PDF%20zoznamy/Kastiele_ubyt/Castl_EN.pdf. The Spišský hrad Castle and the monuments, which surround it, have been added to the UNESCO World Heritage List..",
+        "locality":"all parts of country",
+        "image_source":"https://slovakia.transferbooking.org/wp-content/uploads/spis_castle.wh41t.jpg",
+        "image_source2":"https://images6.fanpop.com/image/photos/41500000/The-Belianske-Tatras-Slovakia-slovakia-41593642-300-202.jpg"
+    }]

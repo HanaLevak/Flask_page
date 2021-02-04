@@ -1,7 +1,7 @@
-import os
 import json
-from flask import Flask, render_template, request, flash
+import os
 
+from flask import Flask, flash, render_template, request
 
 app = Flask(__name__)
 app.secret_key = os.environ.get("SECRET_KEY")
@@ -9,15 +9,16 @@ app.secret_key = os.environ.get("SECRET_KEY")
 
 @app.route("/")
 def index():
-    return render_template("index.html",  page_title="Home")
+    return render_template("index.html", page_title="Home")
 
 
 @app.route("/legends")
 def legends():
-    item = []
+    legends = []
     with open("data/legends.json", "r")as json_data:
-        data =json.load(json_data)
-    return render_template("legends.html", page_title="Legends")
+        legends = json.load(json_data)
+    return render_template("legends.html", page_title ="Legends",
+        legend = legends)
 
 
 @app.route("/contact", methods=["GET", "POST"])
