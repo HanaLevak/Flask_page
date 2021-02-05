@@ -15,10 +15,22 @@ def index():
 @app.route("/legends")
 def legends():
     legends = []
-    with open("data/legends.json", "r")as json_data:
+    with open("data/legends.json", "r") as json_data:
         legends = json.load(json_data)
-    return render_template("legends.html", page_title ="Legends",
-        legend = legends)
+    return render_template("legends.html", page_title="Legends",
+                           legends=legends)
+
+
+@app.route("/legends/<member_name>")
+def legends_member(member_name):
+    member = {}
+    with open("data/legends.json", "r") as json_data:
+        member = json.load(json_data)
+        for obj in member_name:
+            if obj["name"] == member_name:
+                member = obj
+    return render_template("member.html", page_title="Member",
+                           legends=member)
 
 
 @app.route("/contact", methods=["GET", "POST"])

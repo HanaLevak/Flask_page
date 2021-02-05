@@ -41,7 +41,15 @@
   --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
+.signup-section{
+display: grid;
+font-variant-numeric: oldstyle-nums;
+padding: 0.5rem;
+margin: 0.5rem;
+border: double;
+max-height: 100%;
 
+}
 *,
 *::before,
 *::after {
@@ -49,6 +57,10 @@
 }
 
 html {
+      margin-top: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
   font-family: sans-serif;
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
@@ -57,12 +69,17 @@ html {
 
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block;
+  margin-top: 0.9rem;
+  margin-left: 0.9rem;
+  margin-right: 0.9rem;
+  margin-bottom: 0.9rem;
 }
 
 body {
   margin: 0;
   font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1rem;
+  
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
@@ -110,7 +127,9 @@ address {
 ol,
 ul,
 dl {
-  margin-top: 0;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
   margin-bottom: 1rem;
 }
 
