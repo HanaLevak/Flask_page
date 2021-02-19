@@ -15,22 +15,19 @@ def index():
 @app.route("/legends")
 def legends():
     legends = []
-    with open("data/legends.json", "r") as json_data:
-        legends = json.load(json_data)
-    return render_template("legends.html", page_title="Legends",
-                           legends=legends)
+    with open("data/legends.json", "r") as my_json:
+        legends = json.load(my_json)
+    return render_template( "legends.html", legends = legends )
 
 
-@app.route("/legends/<member_name>")
-def legends_member(member_name):
-    member = {}
+@app.route("/legends/<creature>")
+def creature():
+    legends.creature = {}
     with open("data/legends.json", "r") as json_data:
-        member = json.load(json_data)
-        for obj in member_name:
-            if obj["name"] == member_name:
-                member = obj
-    return render_template("member.html", page_title="Member",
-                           legends=member)
+        creature = json.load(json_data)
+        for creature in legends.creature:
+    return render_template("creature.html", page_title="creature",
+                           creature=creature)
 
 
 @app.route("/contact", methods=["GET", "POST"])
